@@ -17,12 +17,21 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        logindialog.h
+        logindialog.cpp
+        logindialog.ui
+        registerdialog.h
+        registerdialog.cpp
+        registerdialog.ui
+        global.h
 )
-
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../bin) #设置可执行程序输出路径
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(IM_Client
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        Res.qrc
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET IM_Client APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Resource/gmail.png</file>
+        <file>Style/style.qss</file>
+        <file>Resource/googlelogo_color.png</file>
+    </qresource>
+</RCC>
